@@ -1,0 +1,12 @@
+[package]
+name = "xeonc"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+xeon_lexer = { path = "../xeon_lexer" }
+xeon_ast = { path = "../xeon_ast" }
+xeon_parser = { path = "../xeon_parser" }
+xeon_codegen_js = { path = "../xeon_codegen_js" }
+xeon_codegen_wasm = { path = "../xeon_codegen_wasm" }
+notify = "6.1.1"

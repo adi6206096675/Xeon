@@ -1,0 +1,15 @@
+[workspace]
+resolver = "3"
+members = [
+    "crates/xeon_lexer",
+    "crates/xeon_ast",
+    "crates/xeon_parser",
+    "crates/xeon_codegen_js",
+    "crates/xeon_codegen_wasm",
+    "crates/xeonc"
+]
+
+[workspace.package]
+version = "0.1.0"
+authors = ["Aditya "]
+edition = "2021"

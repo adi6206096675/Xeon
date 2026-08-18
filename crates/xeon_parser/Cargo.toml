@@ -1,0 +1,8 @@
+[package]
+name = "xeon_parser"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+xeon_lexer = { path = "../xeon_lexer" }
+xeon_ast = { path = "../xeon_ast" }

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://raw.githubusercontent.com/axisp/vscode-schemas/main/schemas/textmate.json",
+  "scopeName": "source.xeon",
+  "fileTypes": ["xeon"],
+  "patterns": [
+    {
+      "name": "comment.line.double-slash.xeon",
+      "match": "//.*$"
+    },
+    {
+      "name": "keyword.control.xeon",
+      "match": "\\b(component|import|from|let|return|If|For|as|each)\\b"
+    },
+    {
+      "name": "storage.type.xeon",
+      "match": "\\b(useState|useEffect)\\b"
+    },
+    {
+      "name": "string.quoted.double.xeon",
+      "begin": "\"",
+      "end": "\""
+    },
+    {
+      "name": "entity.name.tag.xeon",
+      "match": "</?([A-Z][a-zA-Z0-9]*)>"
+    },
+    {
+      "name": "entity.other.attribute-name.xeon",
+      "match": "\\b([a-zA-Z_-]+)(?==)"
+    }
+  ],
+  "repository": {}
+}

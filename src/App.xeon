@@ -1,0 +1,18 @@
+import { Button, Text, Container } from "@xeon/ui";
+
+component App() { 
+    let [data, setData] = useState(["Alpha", "Beta"]);
+    let [isLoading, setIsLoading] = useState(false);
+    
+    return <Container layout="flex">
+        <Text color="white">Xeon Production Workspace</Text>
+        
+        <If condition="{isLoading}">
+            <Text>Loading data...</Text>
+        </If>
+        
+        <For as="item" each="{data}">
+            <Button action={() => console.log(item)}>{item}</Button>
+        </For>
+    </Container>; 
+}

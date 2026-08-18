@@ -1,0 +1,7 @@
+[package]
+name = "xeon-app"
+version = "0.1.0"
+target = "js" # Change to "wasm" for custom engine bindings
+
+[dependencies]
+"@xeon/ui" = "latest"

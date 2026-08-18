@@ -1,0 +1,25 @@
+{
+  "name": "xeon-lang",
+  "displayName": "Xeon Language Support",
+  "description": "Syntax highlighting and language support for the Xeon UI programming language.",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "xeon",
+      "aliases": ["Xeon", "xeon"],
+      "extensions": [".xeon"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "xeon",
+      "scopeName": "source.xeon",
+      "path": "./syntaxes/xeon.tmLanguage.json"
+    }]
+  }
+}
